@@ -10,12 +10,15 @@ html {
   font-family: "Inter", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* ?NAV */
 nav {
   padding: 16px 52px;
   display: flex;
   justify-content: space-between;
-  /* background-color: yellow; */
 }
 
 nav .logo img {
@@ -35,8 +38,8 @@ nav .navigasi ul {
 }
 
 nav .navigasi ul li a {
-  color: black;
   text-decoration: none;
+  color: black;
 }
 
 /* ?HEADER */
@@ -387,7 +390,7 @@ footer h5 {
 }
 
 /* *SMARTPHONE */
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* ?NAV */
   nav {
     padding: 16px 16px;
@@ -404,31 +407,27 @@ footer h5 {
   }
 
   header .teks {
-    width: 100vw;
+    width: 90vw;
+    margin-top: 64px;
     padding-top: 52px;
     padding-left: 0px;
   }
 
   header .teks h3 {
-    padding-left: 18px;
     font-size: 14px;
   }
 
   header .teks h1 {
-    padding-left: 18px;
-    font-size: 24px;
+    font-size: 20px;
   }
 
   header .teks a {
-    margin-top: 32px;
-    margin-left: 18px;
-    padding: 12px 18px;
-    font-size: 14px;
+    display: none;
   }
 
   header .gambar {
-    width: 100vw;
-    height: 440px;
+    width: 90vw;
+    height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -595,5 +594,257 @@ footer h5 {
   /* ?FOOTER */
   footer h5 {
     font-size: 8px;
+  }
+}
+
+/* *TABLET - PORTRAIT */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* ?NAV */
+  nav {
+    padding: 16px 32px;
+  }
+
+  /* ?HEADER */
+
+  header .teks {
+    margin-left: 32px;
+    padding-left: 0px;
+  }
+
+  header .teks h3 {
+    font-size: 18px;
+  }
+
+  header .teks h1 {
+    font-size: 24px;
+  }
+
+  header .gambar {
+    margin-right: 32px;
+    padding-right: 0px;
+  }
+
+  header .gambar img {
+    width: 380px;
+    margin-left: 0px;
+  }
+
+  /* ?SECTION - TENTANG SAYA */
+  #tentangSaya .gambar img {
+    margin-right: 0px;
+    margin-left: 32px;
+  }
+
+  #tentangSaya .teks {
+    padding: 180px 32px 100px 32px;
+  }
+
+  /* ?SECTION - PORTOFOLIO */
+  #portofolio .kontainer {
+    gap: 24px;
+    margin: 52px 32px;
+  }
+
+  #portofolio .kontainer .kartu {
+    width: 43%;
+    height: 480px;
+    padding: 16px;
+  }
+
+  #portofolio .kontainer .kartu img {
+    height: 200px;
+  }
+
+  #portofolio .kontainer .kartu p {
+    padding: 0 16px;
+  }
+
+  #portofolio .kontainer .kartu hr {
+    margin: 16px 16px;
+  }
+
+  #portofolio .kontainer .kartu h5 {
+    margin: 0 16px;
+  }
+
+  #portofolio .kontainer .kartu .teknologi {
+    margin: 16px;
+  }
+
+  /* ?SECTION - KEMAMPUAN */
+  #kemampuan .teknologi {
+    margin: 32px 32px 100px 32px;
+    padding: 0 32px;
+  }
+
+  #kemampuan .teknologi img {
+    width: 60px;
+    height: 60px;
+  }
+
+  #kemampuan .kontainer {
+    margin: 0 32px;
+  }
+
+  #kemampuan .kontainer .kartu {
+    width: 220px;
+    padding: 8px;
+  }
+
+  #kemampuan .kontainer .kartu .gambar {
+    width: 220px;
+  }
+
+  #kemampuan .kontainer .kartu h3 {
+    margin: 16px 0;
+  }
+
+  #kemampuan .kontainer .kartu p {
+    margin: 0 8px;
+  }
+
+  /* ?SECTION - KONTAK */
+  #kontak .kontainer .gambar {
+    margin-left: 32px;
+  }
+
+  #kontak .kontainer .gambar img {
+    width: 380px;
+    float: none;
+    margin-top: 60px;
+    margin-right: 0px;
+  }
+
+  #kontak .kontainer .teks {
+    margin-right: 32px;
+  }
+
+  #kontak .kontainer .teks .sosialMedia {
+    padding: 0 16px;
+  }
+
+  #kontak .kontainer .teks .sosialMedia img {
+    width: 36px;
+    border-radius: 8px;
+  }
+
+  #kontak .kontainer .teks .hubungiSaya a {
+    margin: 16px;
+  }
+}
+
+/* *TABLET - LANDSCAPE */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  body {
+    overflow-x: visible;
+  }
+
+  /* ?HEADER */
+  header .teks {
+    padding-left: 52px;
+  }
+
+  header .teks h1 {
+    font-size: 36px;
+  }
+
+  header .teks a {
+    margin-top: 32px;
+  }
+
+  header .gambar {
+    padding-right: 52px;
+  }
+
+  header .gambar img {
+    margin-left: 80px;
+  }
+
+  /* ?SECTION - TENTANG SAYA */
+  #tentangSaya .gambar img {
+    margin-right: 0px;
+    margin-left: 52px;
+  }
+
+  #tentangSaya .teks {
+    width: 70%;
+    padding: 100px 52px 100px 52px;
+  }
+
+  /* ?SECTION - PORTOFOLIO */
+  #portofolio .kontainer {
+    margin: 52px;
+  }
+
+  #portofolio .kontainer .kartu h3 {
+    margin-top: 8px;
+  }
+
+  #portofolio .kontainer .kartu p {
+    padding: 0 16px;
+  }
+
+  #portofolio .kontainer .kartu hr {
+    margin: 16px;
+  }
+
+  #portofolio .kontainer .kartu h5 {
+    margin: 0 16px;
+  }
+
+  #portofolio .kontainer .kartu .teknologi {
+    margin: 8px;
+  }
+
+  #portofolio .kontainer .kartu .teknologi img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* ?SECTION - KEMAMPUAN */
+  #kemampuan .teknologi {
+    margin: 30px 52px 80px 52px;
+    padding: 0 80px;
+  }
+
+  #kemampuan .teknologi img {
+    width: 70px;
+    height: 70px;
+  }
+
+  #kemampuan .kontainer {
+    margin: 0 52px;
+  }
+
+  #kemampuan .kontainer .kartu p {
+    margin: 0 8px;
+  }
+
+  /* ?SECTION - KONTAK */
+  #kontak {
+    height: 100vh;
+  }
+
+  #kontak .kontainer {
+    display: flex;
+    margin-top: 52px;
+  }
+
+  #kontak .kontainer .gambar {
+    margin-left: 52px;
+  }
+
+  #kontak .kontainer .gambar img {
+    width: 500px;
+    float: none;
+    margin-right: 0px;
+  }
+
+  #kontak .kontainer .teks {
+    margin-right: 52px;
+  }
+
+  #kontak .kontainer .teks .sosialMedia img {
+    border-radius: 12px;
   }
 }
