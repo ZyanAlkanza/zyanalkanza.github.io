@@ -315,7 +315,6 @@ header .gambar img {
   width: 50%;
   height: 500px;
   margin-left: 180px;
-  /* background-color: lightcoral; */
 }
 
 #kontak .kontainer .gambar img {
@@ -447,6 +446,11 @@ footer h5 {
   }
 
   /* ?SECTION - TENTANG SAYA */
+  #tentangSaya {
+    height: fit-content;
+    padding-bottom: 92px;
+  }
+
   #tentangSaya .gambar {
     display: none;
   }
@@ -466,11 +470,13 @@ footer h5 {
   }
 
   #portofolio h1 {
+    padding: 16px 24px;
     margin: 0 18px;
   }
 
   #portofolio .kontainer {
     margin: 32px 18px;
+    row-gap: 32px;
   }
 
   #portofolio .kontainer .kartu {
@@ -480,11 +486,10 @@ footer h5 {
   }
 
   #portofolio .kontainer .kartu img {
-    height: 80px;
+    height: 150px;
   }
 
   #portofolio .kontainer .kartu h3 {
-    margin-top: 8px;
     padding: 0 8px;
     font-size: 16px;
     font-weight: 600;
@@ -497,11 +502,11 @@ footer h5 {
   }
 
   #portofolio .kontainer .kartu hr {
-    margin: 8px 8px;
+    margin: 16px 8px;
   }
 
   #portofolio .kontainer .kartu h5 {
-    margin: 0 8px;
+    margin: 8px;
     font-size: 12px;
   }
 
@@ -519,11 +524,11 @@ footer h5 {
   /* ?SECTION - KEMAMPUAN */
   #kemampuan {
     height: fit-content;
-    padding-bottom: 32px;
+    padding-bottom: 52px;
   }
 
   #kemampuan h1 {
-    margin: 0 18px;
+    margin: 0 18px 32px 18px;
   }
 
   #kemampuan .teknologi {
@@ -568,6 +573,10 @@ footer h5 {
   }
 
   /* ?SECTION - KONTAK */
+  #kontak {
+    height: fit-content;
+  }
+
   #kontak .kontainer {
     margin-top: 32px;
   }
@@ -639,16 +648,24 @@ footer h5 {
   }
 
   /* ?SECTION - TENTANG SAYA */
+  #tentangSaya {
+    height: fit-content;
+    padding: 92px 0;
+  }
   #tentangSaya .gambar img {
     margin-right: 0px;
     margin-left: 32px;
   }
 
   #tentangSaya .teks {
-    padding: 180px 32px 100px 32px;
+    padding: 40px 32px 100px 32px;
   }
 
   /* ?SECTION - PORTOFOLIO */
+  #portofolio {
+    height: fit-content;
+    padding: 52px 0;
+  }
   #portofolio .kontainer {
     gap: 24px;
     margin: 52px 32px;
@@ -662,6 +679,10 @@ footer h5 {
 
   #portofolio .kontainer .kartu img {
     height: 200px;
+  }
+
+  #portofolio .kontainer .kartu h3 {
+    padding: 0 16px;
   }
 
   #portofolio .kontainer .kartu p {
@@ -681,8 +702,12 @@ footer h5 {
   }
 
   /* ?SECTION - KEMAMPUAN */
+  #kemampuan {
+    height: fit-content;
+    padding: 32px 0 92px 0;
+  }
   #kemampuan .teknologi {
-    margin: 32px 32px 100px 32px;
+    margin: 32px 32px 52px 32px;
     padding: 0 32px;
   }
 
@@ -697,7 +722,7 @@ footer h5 {
 
   #kemampuan .kontainer .kartu {
     width: 220px;
-    padding: 8px;
+    padding: 16px 8px;
   }
 
   #kemampuan .kontainer .kartu .gambar {
@@ -713,6 +738,15 @@ footer h5 {
   }
 
   /* ?SECTION - KONTAK */
+  #kontak {
+    height: fit-content;
+    padding: 32px 0 72px 0;
+  }
+
+  #kontak .kontainer {
+    margin-top: 12px;
+  }
+
   #kontak .kontainer .gambar {
     margin-left: 32px;
   }
